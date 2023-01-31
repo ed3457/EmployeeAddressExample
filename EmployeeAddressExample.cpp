@@ -5,7 +5,23 @@
 #include "Employee.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+	Employee jamesObject;
+
+	/*cout << jamesObject.getName() << endl;
+	cout << jamesObject.getAddress().getStreetName() << endl;*/
+
+	Address e2address("Warren ave.", "2324", "48202", "Detroit");
+
+	Employee e2("James", "123456", e2address);
+
+	Employee employee3("Sarah", "5344", e2address);
+
+	cout << employee3.getName() << endl;
+	cout << employee3.getAddress().getStreetName() << endl;
+
+
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
